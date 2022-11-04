@@ -33,7 +33,7 @@ class OrderedExtensionTest extends AbstractTestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->builder = Forms::createFormFactoryBuilder()
             ->setResolvedTypeFactory(new OrderedResolvedFormTypeFactory())

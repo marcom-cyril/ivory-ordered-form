@@ -34,7 +34,7 @@ class OrderedResolvedFormTypeFactoryTest extends AbstractTestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->orderer = $this->createMock(FormOrdererInterface::class);
         $this->resolvedFactory = new OrderedResolvedFormTypeFactory($this->orderer);
